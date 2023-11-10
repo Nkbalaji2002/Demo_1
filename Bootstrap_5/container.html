@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Nithish Kumar</h1>
+        <h2 id="size"></h2>
+    </div>
+
+    <!-- javascript link -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onresize = function (event) {
+            var width = document.getElementById('div').clientWidth
+            document.getElementById('size').innerHTML = width
+        }
+    </script>
+</body>
+</html>
